@@ -239,6 +239,12 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <!--注意，此处必须是main()方法对应类的完整路径  -->
+                            <mainClass>org.telegram.telegrambots.bots.MainApp</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
                 <executions>
                     <execution>
@@ -273,6 +279,7 @@
                         </goals>
                         <configuration>
                             <doclint>none</doclint>
+                            <skip>true</skip>
                         </configuration>
                     </execution>
                 </executions>
