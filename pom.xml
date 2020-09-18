@@ -190,6 +190,7 @@
                 </executions>
                 <configuration>
                     <doclint>none</doclint>
+                    <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>

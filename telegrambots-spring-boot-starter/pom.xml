@@ -194,6 +194,7 @@
                         </goals>
                         <configuration>
                             <doclint>none</doclint>
+                            <skip>true</skip>
                         </configuration>
                     </execution>
                 </executions>
